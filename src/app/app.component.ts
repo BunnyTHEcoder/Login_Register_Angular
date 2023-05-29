@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'myApp';
+  flag:boolean = true
+
+
+  apply(value:string){
+    this.flag = value == "login"?true : false;
+  }
 }
